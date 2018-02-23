@@ -1,4 +1,4 @@
-# # Nginx for Raspberry Pi2/3 based on Alpine Linux
+# Nginx for Raspberry Pi2/3 based on Alpine Linux
 
 [![Docker Automated build](https://img.shields.io/docker/automated/grewhit/armhf-nginx.svg)](https://hub.docker.com/r/grewhit/armhf-nginx/)
 [![Docker Build Status](https://img.shields.io/docker/build/grewhit/armhf-nginx.svg)](https://hub.docker.com/r/grewhit/armhf-nginx/)
