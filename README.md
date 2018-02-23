@@ -1,5 +1,6 @@
 # Nginx for Raspberry Pi2/3 based on Alpine Linux
 
+[![apm](https://img.shields.io/apm/l/vim-mode.svg?style=plastic)](https://github.com/grewhit25/docker-nginx/blob/master/LICENSE)
 [![Docker Automated build](https://img.shields.io/docker/automated/grewhit/armhf-nginx.svg)](https://hub.docker.com/r/grewhit/armhf-nginx/)
 [![Docker Build Status](https://img.shields.io/docker/build/grewhit/armhf-nginx.svg)](https://hub.docker.com/r/grewhit/armhf-nginx/)
 
