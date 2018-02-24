@@ -76,7 +76,7 @@ RUN	 apk add -U --no-cache --virtual .build-deps \
 		geoip-dev \
 	&& curl -fSL https://nginx.org/download/nginx-$NGINX_VERSION.tar.gz -o nginx.tar.gz \
 	&& curl -fSL https://nginx.org/download/nginx-$NGINX_VERSION.tar.gz.asc  -o nginx.tar.gz.asc \
-	&& export GNUPGHOME="$(mktemp -d)" \
+	&& export GNUPGHOME="$(mktemp -d)"
 RUN	found=''; \
 	for server in \
 		ha.pool.sks-keyservers.net \
