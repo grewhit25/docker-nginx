@@ -92,8 +92,8 @@ RUN	 apk add -U --no-cache --virtual .build-deps \
 	&& rm -r "$GNUPGHOME" nginx.tar.gz.asc \
 	&& mkdir -p /usr/src \
 	&& tar -zxC /usr/src -f nginx.tar.gz \
-	&& rm nginx.tar.gz \
-	&& cd /usr/src/nginx-$NGINX_VERSION \
+	&& rm nginx.tar.gz
+RUN	cd /usr/src/nginx-$NGINX_VERSION \
 	&& ./configure $CONFIG --with-debug \
 	&& make -j$(getconf _NPROCESSORS_ONLN) \
 	&& mv objs/nginx objs/nginx-debug \
