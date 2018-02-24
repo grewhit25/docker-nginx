@@ -61,7 +61,7 @@ RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 	" \
 	&& addgroup -S nginx \
 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx
-RUN	 apk add -U --no-cache --virtual .build-deps \
+RUN	 apk add --update --no-cache --virtual .build-deps \
 		gcc \
 		libc-dev \
 		make \
@@ -82,6 +82,7 @@ RUN	found=''; \
 		ha.pool.sks-keyservers.net \
 		hkp://keyserver.ubuntu.com:80 \
 		hkp://p80.pool.sks-keyservers.net:80 \
+		hkps://hkps.pool.sks-keyservers.net \
 		pgp.mit.edu \
 	; do \
 		echo "Fetching GPG key $GPG_KEYS from $server"; \
