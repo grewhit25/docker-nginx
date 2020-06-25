@@ -62,7 +62,7 @@ jobs:
             --platform ${DOCKER_PLATFORMS} \
             --output "type=image,push=false" \
             --tag ${DOCKER_IMAGE}:latest \
-            --file ./${DOCKERFILE} ./
+            --file ${DOCKERFILE} .
       -
         name: Docker Login
         env:
@@ -78,7 +78,7 @@ jobs:
             --platform ${DOCKER_PLATFORMS} \
             --output "type=image,push=true" \
             --tag ${DOCKER_IMAGE}:latest \
-            --file ./${DOCKERFILE} ./
+            --file ${DOCKERFILE} .
       -
         name: Docker Check Manifest
         run: |
